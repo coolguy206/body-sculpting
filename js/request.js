@@ -17,15 +17,18 @@ var num = 2;
 var shutterArr = [
     {
         search: `single women`,
-        url: `https://www.shutterstock.com/search/women-bodybuilding?image_type=photo&people_number=1`
+        // url: `https://www.shutterstock.com/search/women-bodybuilding?image_type=photo&people_number=1`
+        url: `https://www.shutterstock.com/search/similar/509556253`
     },
     {
         search: `single men`,
-        url: `https://www.shutterstock.com/search/bodybuilding?image_type=photo&gender=male&mreleased=true&people_number=1`
+        // url: `https://www.shutterstock.com/search/bodybuilding?image_type=photo&gender=male&mreleased=true&people_number=1`
+        url: `https://www.shutterstock.com/search/similar/1706795791`
     },
     {
         search: `two bodybuilders`,
-        url: `https://www.shutterstock.com/search/bodybuilding?image_type=photo&mreleased=true&people_number=2`
+        // url: `https://www.shutterstock.com/search/bodybuilding?image_type=photo&mreleased=true&people_number=2`
+        url: `https://www.shutterstock.com/search/models/20204893,15619090`
     }
 ];
 
@@ -78,7 +81,7 @@ request.get(shutterArr[num].url, (err, data) => {
                             }
                             arr.push(data);
                             // arr.splice(1, 1);
-                            console.log(arr.length);
+                            // console.log(arr.length);
                             console.log(arr[0].search);
                             console.log(arr[1].search);
                             console.log(arr[2].search);
