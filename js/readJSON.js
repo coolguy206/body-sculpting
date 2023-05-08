@@ -3,7 +3,7 @@ const fs = require('fs');
 const util = require('util');
 const writeFileContent = util.promisify(fs.writeFile);
 const readFileContent = util.promisify(fs.readFile);
-const jsonName = `exercise.json`;
+const jsonName = `food.json`;
 
 readFileContent(`../json/${jsonName}`, 'utf8')
     .then((data) => {
