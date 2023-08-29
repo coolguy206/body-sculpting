@@ -12,7 +12,7 @@ const jsonName = `shutterstock.json`;
 //! ADD/EDIT THE SHUTTERARR
 //! USE THE NUM VARIABLE TO SPECIFIY WHICH URL TO MAKE THE GET REQUEST
 
-var num = 2;
+var num = 3;
 
 var shutterArr = [
     {
@@ -29,6 +29,10 @@ var shutterArr = [
         search: `two bodybuilders`,
         // url: `https://www.shutterstock.com/search/bodybuilding?image_type=photo&mreleased=true&people_number=2`
         url: `https://www.shutterstock.com/search/models/20204893,15619090`
+    },
+    {
+        search: `food`,
+        url: `https://www.shutterstock.com/g/bit24?searchterm=food`
     }
 ];
 

@@ -3,12 +3,20 @@ const fs = require('fs');
 const util = require('util');
 const writeFileContent = util.promisify(fs.writeFile);
 const readFileContent = util.promisify(fs.readFile);
-const jsonName = `food.json`;
+const jsonName = `shutterstock.json`;
 
 readFileContent(`../json/${jsonName}`, 'utf8')
     .then((data) => {
         data = JSON.parse(data);
-        console.log(data);
+        // console.log(data);
+
+        //! SHUTTERSTOCK
+        console.log(data[3].imgs[7]);
+
+        //! RECIPES
+        // console.log(data.recipes[0]);
+        // console.log(data.recipes[0].nutrition.nutrients);
+        // console.log(data.recipes[0].analyzedInstructions[0].steps);
 
         //! LOOP
         // data.exercises.forEach((val, i) => {
